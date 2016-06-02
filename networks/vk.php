@@ -19,6 +19,11 @@
 							<a href="' . get_site_url() . '/wp-admin/options-general.php?page=social_poster">
 								Update your settings for posting to VK.com
 							</a>
+						</div>
+						<div class="misc-pub-section misc-pub-section-last">
+						    <label class="selectit">
+							    <input type="checkbox"> Подтверждаю, что речь идёт о прошедшем событии
+							</label>
 						</div>';
 
                 return;
@@ -33,7 +38,12 @@
 								' . (!empty($value) ? 'Already published to VK.com' : 'Publish to VK.com') . '
 							</label>
 						</span>
-					</div>';
+					</div>
+                    <div class="misc-pub-section misc-pub-section-last">
+                        <label class="selectit">
+                            <input type="checkbox"> Подтверждаю, что речь идёт о прошедшем событии
+                        </label>
+                    </div>';
         }
 
         public function publish($postID)
